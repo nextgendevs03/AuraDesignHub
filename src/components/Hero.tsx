@@ -71,11 +71,11 @@ const Hero: React.FC = () => {
           {/* Simple Stats */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 pt-12 border-t border-white/20">
             <div className="text-center">
-              <div className="text-4xl font-bold text-white mb-2">15+</div>
+              <div className="text-4xl font-bold text-white mb-2">10+</div>
               <div className="text-white/80 text-lg">Years Experience</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-white mb-2">500+</div>
+              <div className="text-4xl font-bold text-white mb-2">40+</div>
               <div className="text-white/80 text-lg">Projects Completed</div>
             </div>
             <div className="text-center">
