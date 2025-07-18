@@ -1,17 +1,8 @@
 import React from 'react';
-import { ArrowRight, Phone, Star } from 'lucide-react';
+import { Star } from 'lucide-react';
 
 const Hero: React.FC = () => {
-  const handleWhatsAppClick = () => {
-    window.open('https://wa.me/1555DESIGN?text=Hi! I\'m interested in your interior design services.', '_blank');
-  };
 
-  const scrollToContact = () => {
-    const element = document.getElementById('contact');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
 
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -50,22 +41,22 @@ const Hero: React.FC = () => {
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6 mb-16">
+          {/* <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6 mb-16">
             <button
               onClick={scrollToContact}
               className="bg-amber-600 hover:bg-amber-700 text-white px-10 py-5 rounded-full text-lg font-bold flex items-center space-x-3 transition-all duration-300 transform hover:scale-105 shadow-2xl"
             >
               <span>Start Your Project</span>
               <ArrowRight size={22} />
-            </button>
+            </button> */}
 
-            <button
+            {/* <button
               onClick={handleWhatsAppClick}
               className="bg-green-500 hover:bg-green-600 text-white px-10 py-5 rounded-full text-lg font-bold flex items-center space-x-3 transition-all duration-300 transform hover:scale-105 shadow-2xl"
             >
               <Phone size={22} />
               <span>Chat on WhatsApp</span>
-            </button>
+            </button> */}
           </div>
 
           {/* Simple Stats */}
@@ -84,7 +75,7 @@ const Hero: React.FC = () => {
             </div>
           </div>
         </div>
-      </div>
+      {/* </div> */}
 
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
