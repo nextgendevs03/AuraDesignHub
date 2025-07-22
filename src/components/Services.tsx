@@ -1,5 +1,5 @@
 import React from 'react';
-import { Home, Building, Palette, Phone, ArrowRight } from 'lucide-react';
+import { Home, Building, Palette, ArrowRight } from 'lucide-react';
 
 const Services: React.FC = () => {
   const handleWhatsAppClick = (service: string) => {
@@ -73,13 +73,13 @@ const Services: React.FC = () => {
                   ))}
                 </ul>
 
-                <button
+                {/* <button
                   onClick={() => handleWhatsAppClick(service.title)}
                   className="w-full bg-green-500 hover:bg-green-600 text-white py-3 rounded-full flex items-center justify-center space-x-2 transition-colors duration-200"
                 >
                   <Phone size={18} />
                   <span>Get Quote on WhatsApp</span>
-                </button>
+                </button> */}
               </div>
             </div>
           ))}
