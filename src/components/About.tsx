@@ -1,10 +1,7 @@
 import React from 'react';
-import { Users, Award, Clock, Phone } from 'lucide-react';
+import { Users, Award, Clock, } from 'lucide-react';
 
 const About: React.FC = () => {
-  const handleWhatsAppClick = () => {
-    window.open('https://wa.me/1555DESIGN?text=Hi! I\'d like to know more about Aura Design Hub.', '_blank');
-  };
 
   const features = [
     {
@@ -59,14 +56,7 @@ const About: React.FC = () => {
               attention to detail to every project. Our team works closely with you to understand 
               your vision and bring it to life beyond your expectations.
             </p>
-            
-            <button
-              onClick={handleWhatsAppClick}
-              className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full flex items-center space-x-2 transition-colors duration-200"
-            >
-              <Phone size={20} />
-              <span>Chat About Your Project</span>
-            </button>
+          
           </div>
         </div>
 
