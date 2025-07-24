@@ -1,8 +1,6 @@
-// 
-
 import { useState } from 'react';
 import './Navbar.css';
-import { FaYoutube, FaFacebook, FaInstagram, FaBars, FaTimes } from 'react-icons/fa';
+import { FaYoutube, FaFacebook, FaInstagram, FaBars, FaXmark } from 'react-icons/fa6';
 
 type NavbarProps = {
   mobileNo: string;
@@ -29,11 +27,12 @@ const Navbar = ({ mobileNo, email, socialLinks }: NavbarProps) => {
       </div>
 
       <div className="hamburger" onClick={toggleMenu}>
-        {isOpen ? <FaTimes /> : <FaBars />}
+        {isOpen ? <FaXmark /> : <FaBars />}
       </div>
 
       <div className={`navbar-right ${isOpen ? 'open' : ''}`}>
         <a href={socialLinks.youtube} target="_blank" rel="noopener noreferrer">
+    
           <FaYoutube />
         </a>
         <a href={socialLinks.facebook} target="_blank" rel="noopener noreferrer">

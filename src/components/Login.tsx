@@ -1,5 +1,4 @@
 
-
 import React, { useState } from 'react';
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
@@ -105,9 +104,6 @@ const Login: React.FC<LoginProps> = ({ className = '' }) => {
             Invalid phone number. Please enter a 10-digit number.
           </p>
         )}
-
-       
-
    <button
           type="submit"
           className="w-full bg-red-600 hover:bg-red-700 text-white font-semibold py-3 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg shadow-red-500/50"
@@ -121,7 +117,4 @@ const Login: React.FC<LoginProps> = ({ className = '' }) => {
 };
 
 export default Login;
-
-
-
 
