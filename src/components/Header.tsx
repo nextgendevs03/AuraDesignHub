@@ -69,7 +69,7 @@ const Header: React.FC = () => {
             ))}
           </nav>
 
-          {/* WhatsApp CTA */}
+          {/* WhatsApp CTA
           <div className="hidden md:flex items-center space-x-4">
             <button
               onClick={handleWhatsAppClick}
@@ -78,7 +78,7 @@ const Header: React.FC = () => {
               <Phone size={18} />
               <span>WhatsApp</span>
             </button>
-          </div>
+          </div> */}
 
           {/* Mobile Menu Button */}
           <button
