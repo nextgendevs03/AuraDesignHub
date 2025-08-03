@@ -2,7 +2,11 @@
 import React, { useState } from 'react';
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
+import emailjs from 'emailjs-com';
 
+
+
+emailjs.init("Xf89sj3y10pHX5Sry");
 interface LoginProps {
   className?: string;
 }
@@ -12,6 +16,7 @@ const Login: React.FC<LoginProps> = ({ className = '' }) => {
     name: '',
     email: '',
     phone: '',
+    
   });
 
   const [validPhone, setValidPhone] = useState(true);
