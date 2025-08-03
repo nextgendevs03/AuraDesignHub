@@ -73,13 +73,6 @@ const Services: React.FC = () => {
                   ))}
                 </ul>
 
-                {/* <button
-                  onClick={() => handleWhatsAppClick(service.title)}
-                  className="w-full bg-green-500 hover:bg-green-600 text-white py-3 rounded-full flex items-center justify-center space-x-2 transition-colors duration-200"
-                >
-                  <Phone size={18} />
-                  <span>Get Quote on WhatsApp</span>
-                </button> */}
               </div>
             </div>
           ))}
