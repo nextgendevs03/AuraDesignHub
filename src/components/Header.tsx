@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Phone } from 'lucide-react';
+import Navbar from './Navbar';
+
+// import Login from './Login';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -29,8 +32,26 @@ const Header: React.FC = () => {
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       isScrolled ? 'bg-white shadow-lg' : 'bg-[#DDCDB6]'
     }`}>
+
+
+<Navbar
+
+        mobileNo="+1 1234567890"
+
+        email="infotech@auradesign.com"
+
+        socialLinks={{
+
+          youtube: 'https://youtube.com',
+
+          facebook: 'https://facebook.com',
+
+          instagram: 'https://instagram.com',
+        }}
+      />
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16 md:h-20">
+        <div className="flex justify-between items-center h-12 md:h-12">
           {/* Logo */}
           <div className="flex-shrink-0">
             <h1 className="text-2xl md:text-3xl font-bold text-gray-900">
@@ -39,7 +60,7 @@ const Header: React.FC = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
+          <nav className="hidden md:flex space-x-6">
             {['Home', 'About', 'Services', 'Portfolio', 'Testimonials', 'Contact'].map((item) => (
               <button
                 key={item}
@@ -71,6 +92,7 @@ const Header: React.FC = () => {
           </button>
         </div>
 
+
         {/* Mobile Menu */}
         {isMenuOpen && (
           <div className="md:hidden absolute top-full left-0 right-0 bg-white shadow-lg border-t">
@@ -95,6 +117,8 @@ const Header: React.FC = () => {
           </div>
         )}
       </div>
+
+
     </header>
   );
 };

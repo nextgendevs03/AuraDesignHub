@@ -1,81 +1,69 @@
 import React from 'react';
 import { Star } from 'lucide-react';
+import Login from './Login';
 
 const Hero: React.FC = () => {
-
-
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+
       <div className="absolute inset-0 z-0">
         <img
           src="https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop"
           alt="Luxury interior design"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black/50"></div>
+        <div className="absolute inset-0 bg-black/60"></div>
       </div>
 
-      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <div className="max-w-4xl mx-auto">
-          {/* Trust Badge */}
-          <div className="flex items-center justify-center space-x-2 mb-8">
-            <div className="flex items-center space-x-1">
-              {[...Array(5)].map((_, i) => (
-                <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
-              ))}
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="text-left">
+            <div className="flex items-center space-x-2 mb-6">
+              <div className="flex items-center space-x-1">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
+                ))}
+              </div>
+              <span className="text-white/90 text-lg font-medium">Trusted by 40+ clients</span>
             </div>
-            <span className="text-white/90 text-lg font-medium">Trusted by 500+ clients</span>
-          </div>
 
-          {/* Main Headline */}
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-8 leading-tight">
-            Transform Your 
-            <span className="block text-amber-400">Space </span>
-          </h1>
+            {/* Main Headline */}
+            <h1 className="text-2xl md:text-2xl lg:text-3xl xl:text-6xl font-bold text-white mb-4 leading-tight">
+              Transform Your 
+              <span className="block text-amber-400">Space</span>
+            </h1>
 
-          {/* Subtitle */}
-          <p className="text-xl md:text-2xl text-white/90 mb-12 max-w-3xl mx-auto leading-relaxed">
-            Premium interior design services that bring your vision to life. 
-            From concept to completion, we create spaces that inspire.
-          </p>
+            {/* Subtitle */}
+            <p className="text-xl md:text-1xl text-white/90 mb-5 max-w-1xl leading-relaxed">
+              Premium interior design services that bring your vision to life. 
+              From concept to completion, we create spaces that inspire.
+            </p>
 
-          {/* CTA Buttons */}
-          {/* <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6 mb-16">
-            <button
-              onClick={scrollToContact}
-              className="bg-amber-600 hover:bg-amber-700 text-white px-10 py-5 rounded-full text-lg font-bold flex items-center space-x-3 transition-all duration-300 transform hover:scale-105 shadow-2xl"
-            >
-              <span>Start Your Project</span>
-              <ArrowRight size={22} />
-            </button> */}
-
-            {/* <button
-              onClick={handleWhatsAppClick}
-              className="bg-green-500 hover:bg-green-600 text-white px-10 py-5 rounded-full text-lg font-bold flex items-center space-x-3 transition-all duration-300 transform hover:scale-105 shadow-2xl"
-            >
-              <Phone size={22} />
-              <span>Chat on WhatsApp</span>
-            </button> */}
-          </div>
-
-          {/* Simple Stats */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 pt-12 border-t border-white/20">
-            <div className="text-center">
-              <div className="text-4xl font-bold text-white mb-2">10+</div>
-              <div className="text-white/80 text-lg">Years Experience</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-white mb-2">40+</div>
-              <div className="text-white/80 text-lg">Projects Completed</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-white mb-2">98%</div>
-              <div className="text-white/80 text-lg">Client Satisfaction</div>
+            {/* Stats */}
+            <div className="grid grid-cols-3 gap-6 pt-8 border-t border-white/20 max-w-lg">
+              <div className="text-center">
+                <div className="text-3xl lg:text-4xl font-bold text-white mb-2">10+</div>
+                <div className="text-white/80 text-sm lg:text-base">Years Experience</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl lg:text-4xl font-bold text-white mb-2">40+</div>
+                <div className="text-white/80 text-sm lg:text-base">Projects Completed</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl lg:text-4xl font-bold text-white mb-2">98%</div>
+                <div className="text-white/80 text-sm lg:text-base">Client Satisfaction</div>
+              </div>
             </div>
           </div>
+
+          {/* Login Form - Right Side */}
+          {/* <Login className="w-full max-w-md flex justify-center lg:justify-end" /> */}
+           <div className="flex justify-center lg:justify-end">
+            <Login className="w-full max-w-xs" />
+          </div>
+
         </div>
-      {/* </div> */}
+      </div>
 
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
@@ -88,3 +76,4 @@ const Hero: React.FC = () => {
 };
 
 export default Hero;
+
