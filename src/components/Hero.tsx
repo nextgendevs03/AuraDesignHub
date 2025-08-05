@@ -1,5 +1,6 @@
 import React from 'react';
 import { Star } from 'lucide-react';
+import Login from './Login';
 
 const Hero: React.FC = () => {
 
@@ -83,6 +84,7 @@ const Hero: React.FC = () => {
           <div className="w-1 h-3 bg-white/70 rounded-full mt-2 animate-pulse"></div>
         </div>
       </div>
+      <Login/>
     </section>
   );
 };
