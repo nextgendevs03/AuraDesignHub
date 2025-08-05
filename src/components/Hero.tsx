@@ -29,6 +29,10 @@ const Hero: React.FC = () => {
           </div>
 
           {/* Main Headline */}
+
+
+
+
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-8 leading-tight">
             Transform Your 
             <span className="block text-amber-400">Space </span>
@@ -40,23 +44,7 @@ const Hero: React.FC = () => {
             From concept to completion, we create spaces that inspire.
           </p>
 
-          {/* CTA Buttons */}
-          {/* <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6 mb-16">
-            <button
-              onClick={scrollToContact}
-              className="bg-amber-600 hover:bg-amber-700 text-white px-10 py-5 rounded-full text-lg font-bold flex items-center space-x-3 transition-all duration-300 transform hover:scale-105 shadow-2xl"
-            >
-              <span>Start Your Project</span>
-              <ArrowRight size={22} />
-            </button> */}
-
-            {/* <button
-              onClick={handleWhatsAppClick}
-              className="bg-green-500 hover:bg-green-600 text-white px-10 py-5 rounded-full text-lg font-bold flex items-center space-x-3 transition-all duration-300 transform hover:scale-105 shadow-2xl"
-            >
-              <Phone size={22} />
-              <span>Chat on WhatsApp</span>
-            </button> */}
+         
           </div>
 
           {/* Simple Stats */}

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Phone } from 'lucide-react';
+import Navbar from './Navbar';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -29,6 +30,23 @@ const Header: React.FC = () => {
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       isScrolled ? 'bg-white shadow-lg' : 'bg-[#DDCDB6]'
     }`}>
+
+
+<Navbar
+        mobileNo="+1 1234567890"
+        email="infotech@auradesign.com"
+        socialLinks={{
+          youtube: 'https://youtube.com',
+          facebook: 'https://facebook.com',
+          instagram: 'https://instagram.com',
+        }}
+      />
+
+
+
+
+
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 md:h-20">
           {/* Logo */}
@@ -51,7 +69,7 @@ const Header: React.FC = () => {
             ))}
           </nav>
 
-          {/* WhatsApp CTA */}
+          {/* WhatsApp CTA
           <div className="hidden md:flex items-center space-x-4">
             <button
               onClick={handleWhatsAppClick}
@@ -60,7 +78,7 @@ const Header: React.FC = () => {
               <Phone size={18} />
               <span>WhatsApp</span>
             </button>
-          </div>
+          </div> */}
 
           {/* Mobile Menu Button */}
           <button
