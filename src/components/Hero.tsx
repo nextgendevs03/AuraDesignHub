@@ -1,6 +1,8 @@
 import React from 'react';
 import { Star } from 'lucide-react';
-import Login from './Login';
+import Login from './login';
+
+
 
 const Hero: React.FC = () => {
 
@@ -40,24 +42,6 @@ const Hero: React.FC = () => {
             Premium interior design services that bring your vision to life. 
             From concept to completion, we create spaces that inspire.
           </p>
-
-          {/* CTA Buttons */}
-          {/* <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6 mb-16">
-            <button
-              onClick={scrollToContact}
-              className="bg-amber-600 hover:bg-amber-700 text-white px-10 py-5 rounded-full text-lg font-bold flex items-center space-x-3 transition-all duration-300 transform hover:scale-105 shadow-2xl"
-            >
-              <span>Start Your Project</span>
-              <ArrowRight size={22} />
-            </button> */}
-
-            {/* <button
-              onClick={handleWhatsAppClick}
-              className="bg-green-500 hover:bg-green-600 text-white px-10 py-5 rounded-full text-lg font-bold flex items-center space-x-3 transition-all duration-300 transform hover:scale-105 shadow-2xl"
-            >
-              <Phone size={22} />
-              <span>Chat on WhatsApp</span>
-            </button> */}
           </div>
 
           {/* Simple Stats */}
@@ -84,7 +68,7 @@ const Hero: React.FC = () => {
           <div className="w-1 h-3 bg-white/70 rounded-full mt-2 animate-pulse"></div>
         </div>
       </div>
-      <Login/>
+    <Login />
     </section>
   );
 };
