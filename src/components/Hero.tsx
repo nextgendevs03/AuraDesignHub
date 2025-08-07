@@ -18,7 +18,6 @@ const Hero: React.FC = () => {
         />
         <div className="absolute inset-0 bg-black/60"></div>
       </div>
-
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="text-left">
