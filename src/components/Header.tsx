@@ -41,18 +41,20 @@ const Header: React.FC = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
             {['Home', 'About', 'Services', 'Portfolio', 'Testimonials', 'Contact'].map((item) => (
+
+
               <button
                 key={item}
                 onClick={() => scrollToSection(item.toLowerCase())}
                 className="text-gray-700 hover:text-amber-600 font-medium transition-colors duration-200"
               >
                 {item}
-              </button>
+              </button>  
             ))}
           </nav>
 
           {/* WhatsApp CTA */}
-          <div className="hidden md:flex items-center space-x-4">
+          {/* <div className="hidden md:flex items-center space-x-4">
             <button
               onClick={handleWhatsAppClick}
               className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full flex items-center space-x-2 transition-colors duration-200"
@@ -60,7 +62,7 @@ const Header: React.FC = () => {
               <Phone size={18} />
               <span>WhatsApp</span>
             </button>
-          </div>
+          </div> */}
 
           {/* Mobile Menu Button */}
           <button
