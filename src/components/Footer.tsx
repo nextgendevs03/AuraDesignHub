@@ -48,22 +48,22 @@ const Footer: React.FC = () => {
               <span className="text-amber-400">Aura</span> Design Hub
             </h3>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              Creating extraordinary spaces that inspire and transform lives for over 15 years. 
+              Creating extraordinary spaces that inspire and transform lives for over 10 years. 
               We specialize in luxury residential and commercial interior design solutions.
             </p>
             
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Phone size={18} className="text-amber-400" />
-                <span className="text-gray-300">+1 (555) DESIGN</span>
+                <span className="text-gray-300">+(91) 70282-81032</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail size={18} className="text-amber-400" />
-                <span className="text-gray-300">hello@auradesignhub.com</span>
+                <span className="text-gray-300">info@auradesignhub.in</span>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin size={18} className="text-amber-400" />
-                <span className="text-gray-300">123 Design Street, Creative City, CA 90210</span>
+                <span className="text-gray-300">Bhelkenagar, Kothrud, Pune, Maharashtra 411038</span>
               </div>
             </div>
           </div>
