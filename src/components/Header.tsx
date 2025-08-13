@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Phone } from 'lucide-react';
+import Navbar from './Navbar';
+
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -94,8 +96,19 @@ const Header: React.FC = () => {
             </div>
           </div>
         )}
+    
       </div>
+<Navbar
+        mobileNo="+1 1234567890"
+        email="infotech@auradesign.com"
+        socialLinks={{
+          youtube: 'https://youtube.com',
+          facebook: 'https://facebook.com',
+          instagram: 'https://instagram.com',
+        }}
+      />
     </header>
+
   );
 };
 

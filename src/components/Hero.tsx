@@ -1,8 +1,8 @@
 import React from 'react';
 import { Star } from 'lucide-react';
 
-const Hero: React.FC = () => {
 
+const Hero: React.FC = () => {
 
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -83,7 +83,10 @@ const Hero: React.FC = () => {
           <div className="w-1 h-3 bg-white/70 rounded-full mt-2 animate-pulse"></div>
         </div>
       </div>
+      
+      <Navbar/>
     </section>
+
   );
 };
 
